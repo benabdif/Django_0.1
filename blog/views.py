@@ -6,13 +6,13 @@ from django.shortcuts import render
 
 posts = [
     {
-        'name': 'Sam',
+        'author': 'Sam',
         'title': 'Blog Post 1',
         'content': 'First post content',
         'date_posted': 'August 27, 2018'
     },
     {
-        'name': 'Mohammed',
+        'author': 'Mohammed',
         'title': 'Blog Post 2',
         'content': 'Second post content',
         'date_posted': 'August 28, 2018'
@@ -22,16 +22,17 @@ posts = [
 
 
 def home(request):
-    contx = {
+    context = {
         'posts': posts
     }
     
-    return render(request, 'blog/home.html', contx) # tocontact with html code.
+    return render(request, 'blog/home.html', context) # tocontact with html code.
 
 
 def about(request):
-   name = {'name': 'Fadhel'}
    return render(request, 'blog/about.html', {'title':'About'})
 
+def dolf(request):
+   return render(request, 'blog/dolf.html', {'title':'dolf'})
 
 # # Create your views here.
