@@ -25,14 +25,11 @@ def home(request):
     context = {
         'posts': posts
     }
-    
-    return render(request, 'blog/home.html', context) # tocontact with html code.
+    return render(request, 'blog/home.html', context)
 
 
 def about(request):
-   return render(request, 'blog/about.html', {'title':'About'})
+    return render(request, 'blog/about.html', {'title': 'About'})
 
 def dolf(request):
-   return render(request, 'blog/dolf.html', {'title':'dolf'})
-
-# # Create your views here.
+    return render(request,'blog/dolf.html', {'title': 'Dolf'})
