@@ -31,7 +31,7 @@ def home(request):
 
 def about(request):
    name = {'name': 'Fadhel'}
-   return render(request, 'blog/about.html', name)
+   return render(request, 'blog/about.html', {'title':'About'})
 
 
 # # Create your views here.
