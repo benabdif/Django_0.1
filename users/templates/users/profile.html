@@ -3,13 +3,29 @@
 {% block content %}
     <div class="content-section">
         <div class="media">
-            <img class="rounded-circle account-img" src="{{ user.profile.image.url}}">
+            <img class="rounded-circle account-img" src="{{user.profile.image.url}}">
             <div class="media-body">
-                <h2 class="account-heading">{{user.username}}</h2>
-                <p class="text-secondary">{{ user.email }}</p>  
+                <h2 class="account-heading">{{ user.username }}</h2>
+                <p class="text-secondary">{{ user.email }}</p> 
+
             </div> 
         </div>
     </div>
+
+<!--This is exter code from me it is not nessary I have it -->
+    <div class="card">
+        <div class="card-header">
+            <h5>{{ user.username }}</h5>
+
+        </div>
+        <div class="card-body">
+            <img class="rounded-circle account-img" src="{{user.profile.image.url}}">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">logout</a>
+           
+        </div>
+      </div>
 
 
 {% endblock content %}
