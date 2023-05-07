@@ -84,8 +84,10 @@ a.article-title:hover {
 }
 
 
-/* chatGpt */
 
+
+/* chatGpt */
+/*
 .card {
   width: 300px;
   background-color: #fff;
@@ -127,7 +129,7 @@ a.article-title:hover {
 }
 
 .button:hover {
-  /* background-color: #0077A3; */
+  background-color: #0077A3; This is the orgenal code
   background-color: #070c0e;
-}
+} */
 

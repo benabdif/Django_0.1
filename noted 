@@ -1,0 +1,57 @@
+My project:
+
+# I have to work on Modles Data base
+# I have to wahing django Enaglis and Araibic 
+
+
+1- page for  sell
+    - house:
+       - bath-number
+       - room-number
+       - address
+       - age biuld
+       - price
+       - size for home
+       
+
+    - apartment
+       - bath-number
+       - room-number
+       - address
+       - age biuld
+       - price
+       - size for apartment
+
+    - land
+    
+
+2- page for buy
+
+3- page for rent
+
+4- about 
+    - This to take about the website
+
+5- Post home-appartment-land
+
+6- Sign in / out / regester
+
+
+
+
+    <div class="row">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <div class="card-body">
+              <h3></h3>
+              <h3>{{ x.price }} RS</h3>
+              <a> {{ x.name }} || 2 bath || 500m</a>
+              <a>Built in 1949</a>
+              <a>Location: Corvaills, OR</a>
+              <P>Discraptions: </P>
+              <a href="#" class="button">more...</a>
+            </div>
+        </div>
+
+      </div>
+ 

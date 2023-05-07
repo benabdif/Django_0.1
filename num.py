@@ -60,7 +60,12 @@
 
 
 
+#------- new Example ---------# 
+num1 = {1,2,3}
+num2 = {9,8,10}
 
-
-
+thed = num1.symmetric_difference(num2)
+thea = num1.isdisjoint(num2)
+print(thea)
+print(thed)
 
