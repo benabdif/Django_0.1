@@ -31,8 +31,14 @@ class Addproduct(models.Model):
     authors = models.ForeignKey(User, on_delete=models.CASCADE)
     
     
-
-
     def __str__(self):
         return self.price
+    
+
+class test_t(models.Model):
+    product = models.CharField(max_length=50)
+    
+    def __str__(self):
+        return self.product
+    
     
