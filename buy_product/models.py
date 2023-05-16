@@ -12,6 +12,7 @@ class Addproduct2(models.Model):
     price = models.IntegerField(default=1, blank=True, null=True)
     name = models.CharField(max_length=50, unique=True)
     description = models.CharField(max_length=150)
+    date_posted_product = models.DateTimeField(default=timezone.now)
 
     
     def __str__(self):
