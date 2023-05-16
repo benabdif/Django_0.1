@@ -15,7 +15,11 @@ def fadhel(request):
     }
     return render(request, 'buy_product/homebuy.html', context)
 
-
+# def sell_1(request):
+#     con = {
+#         'Land': Land.objects.all()
+#     }
+#     return render(request, 'buy_product/post_order.html', con)
 
 def sell(request):
     form = my()
@@ -23,9 +27,21 @@ def sell(request):
     formm = land_1()
     return render(request, 'buy_product/sell.html', {'form':form, 'form1':form1, 'formm':formm})
 
+# def post_order(request):
+#     return render(request, 'buy_product/post_order.html')
 
-# class post_card(ListView):
-#     model = Addproduct2
-#     template_name = ''
+class Post_card(ListView):
+    model = Land
+    template_name = 'buy_product/post_order.html'
+    context_object_name_1 = 'lands'
+    ordering_1 = ['-date_posted']
     
     
+# This for example to gied me: 
+
+
+# class PostListViem(ListView):
+#     model = Post
+#     template_name = 'blog/home.html' # <app>/<model>_<viewtype>.html
+#     context_object_name = 'posts'
+#     ordering = ['-date_posted']   

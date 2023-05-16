@@ -22,13 +22,15 @@ def mycoin(coin):
     else:
         print('Sorry you input no right...')
         
-      
-            
-schedule.every(5).seconds.do(mycoin(coin))
+price_coin = mycoin(coin)  
 
-while True:
-    schedule.run_pending()
-    time.sleep(2)
+
+            
+# schedule.every(5).seconds.do(mycoin(coin))
+
+# while True:
+#     schedule.run_pending()
+#     time.sleep(2)
     
 
             
