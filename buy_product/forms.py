@@ -8,7 +8,7 @@ class my(forms.ModelForm):
         model = Addproduct2
         fields = ['price', 'name']
 
- 
+
 
 class test_t1(forms.ModelForm):
     class Meta:

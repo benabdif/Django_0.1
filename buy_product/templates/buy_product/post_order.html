@@ -1,10 +1,27 @@
 {% extends "blog/base.html" %}
 {% block content %}
 {% load crispy_forms_tags %}
-<h1>Fadhel from Post page</h1>
 
+<div class="container">
+    <div class="row">
+     {% for x in object_list %}
+        <div class="col-md-3">
+            <div class="card m-2">
+              <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                <div class="card-body">
+                  <h3>{{ x.price }} RS</h3>
+                  <a> {{ x.name }} || 2 bath || 500m</a>
+                  <a>Built in 1949</a>
+                  <a>Location: Corvaills, OR</a>
+                  <P>Discraptions: </P>
+                  <a href="#" class="button">more...</a>
+                </div>
+            </div>
+          </div>
+      {% endfor %}
+    </div>
 
-
+  </div>
 
 
 
