@@ -6,7 +6,7 @@ from .models import Addproduct2, Land, test_t
 class my(forms.ModelForm):
     class Meta:
         model = Addproduct2
-        fields = ['price', 'name']
+        fields = ['price', 'name','description']
 
 
 
